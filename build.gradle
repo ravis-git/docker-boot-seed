@@ -29,6 +29,12 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	//lombok
+	compile 'org.projectlombok:lombok:1.12.6'
+
+	//jersey for service implementation
+	compile 'org.springframework.boot:spring-boot-starter-jersey'
 }
 
 
