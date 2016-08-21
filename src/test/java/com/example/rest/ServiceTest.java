@@ -24,7 +24,7 @@ public class ServiceTest {
     public void hello() throws Exception {
         ApplicationStatus status = service.hello();
         assertNotNull("Application Status returned by the service",status);
-        assertEquals("Application id returned by the service", status.getId(), 123);
+        assertEquals("Application id returned by the service", status.getId(), 456);
     }
 
 }
