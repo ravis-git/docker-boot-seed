@@ -1,0 +1,19 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: java
+    tag: latest
+
+inputs:
+  - name: source-code
+
+run:
+  path: "source-boot-seed/gradlew"
+  args: ["--build-file", "source-boot-seed/build.gradle", "assemble"]
+
+params:
+  TERM: -dumb
+  GRADLE_OPTS: -Dorg.gradle.native=false

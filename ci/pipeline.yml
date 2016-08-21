@@ -1,0 +1,16 @@
+---
+resources:
+  - name: source-boot-seed
+    type: git
+    source:
+      uri: https://github.com/ravis-git/docker-boot-seed.git
+      branch: master
+
+jobs:
+  - name: build-package
+    plan:
+    - get: source-boot-seed
+      trigger: true
+    - task: package
+      privileged: true
+      file: source-boot-seed/ci/tasks/package-and-test.yml
