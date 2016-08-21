@@ -8,7 +8,7 @@ image_resource:
     tag: latest
 
 inputs:
-  - name: source-code
+  - name: source-boot-seed
 
 run:
   path: "source-boot-seed/gradlew"
