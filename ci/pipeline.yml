@@ -5,6 +5,7 @@ resources:
     source:
       uri: https://github.com/ravis-git/docker-boot-seed.git
       branch: master
+      trigger: true
 
 jobs:
   - name: build-package

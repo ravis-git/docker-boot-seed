@@ -12,7 +12,7 @@ inputs:
 
 run:
   path: "source-boot-seed/gradlew"
-  args: ["--build-file", "source-boot-seed/build.gradle", "assemble"]
+  args: ["--build-file", "source-boot-seed/build.gradle", "clean", "test", "assemble"]
 
 params:
   TERM: -dumb
