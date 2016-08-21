@@ -23,8 +23,8 @@ public class ServiceTest {
     @Test
     public void hello() throws Exception {
         ApplicationStatus status = service.hello();
-        assertNotNull(status);
-        assertEquals(status.getId(), 123);
+        assertNotNull("Application Status returned by the service",status);
+        assertEquals("Application id returned by the service", status.getId(), 123);
     }
 
 }
